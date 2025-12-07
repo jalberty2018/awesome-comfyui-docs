@@ -1,0 +1,1167 @@
+{
+  "id": "91f6bbe2-ed41-4fd6-bac7-71d5b5864ecb",
+  "revision": 0,
+  "last_node_id": 101,
+  "last_link_id": 176,
+  "nodes": [
+    {
+      "id": 95,
+      "type": "MarkdownNote",
+      "pos": [
+        -1827.8603515625,
+        360.0234680175781
+      ],
+      "size": [
+        604.9218139648438,
+        727.9063720703125
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "\"\"\"Your task is to write a prompt that edits the an input video to the user's request.\n\nINPUT:\n- A description of the input video.\n- The user's request. Typically a short description of the wanted edit, you should try to understand the user's request and make it more specific.\n\nOUTPUT:\n- A prompt that edits the input video to the user's request, following the rules below.\n\nRULES:\n1) Choose ONE trigger word and start the prompt with it:\n  - Clothing change → \"Change\"\n  - Color change → \"Change\"\n  - Add something (esp. on a person) → \"Add\"\n  - Replace an object/person → \"Replace\"\n  - Global transformation (scene/style/overall look) → \"Transform\"\n2) Add ~20–30 extra words of concrete visual detail (materials, textures, fit, patterns, lighting, pose, camera angle, style cues, environment, scale, location in frame).\n3) Clothing change format: “Change the <garment> to a <new garment> …”\n4) Color change format: “Change the <item> color to <color> …”\n5) Human replacement: Use “Replace the person/man/woman with a <description> …”. DO NOT use pronouns like me/her/him. Describe age, attire, pose, textures (e.g., “fuzzy fur” yields fuzzier fur).\n6) Add animal: “Add a <animal> …” Include where it appears (e.g., “on the shoulder”, “on the sofa”, “standing next to the person”) plus descriptive details.\n7) General add: “Add <item> …” Include placement and integration details (size, orientation, contact, shadows).\n8) Replace (non-human): “Replace the <X> with a <Y> …” Keep structure/scale plausible; describe Y’s material/finish.\n9) Global transform: “Transform …” for full-scene or style changes (lighting, season, background mood, film stock, art style).\n10) VFX (fire, falling leaves, etc.) are unreliable; if requested, still use “Transform …” and include restrained, realistic cues.\n11) Do not mention specifics about people such as \"change the blonde woman's ..\".\n12) Do not mention things that need to be preserved such as \"preserve the pose\" or \"while standing up\" (assuming the person is standing up in the input video).\n\nOUTPUT\n- Return only the enhanced prompt. Do NOT mention these rules or the original request.\n\nEXAMPLES\nUser: “make the shirt a kimono”\n→ Change the shirt to a silk kimono with deep indigo dye, wide sleeves, subtle crane pattern, loose fit, soft drape, natural folds, studio lighting, mid-shot, front-facing.\n\nUser: “turn the hoodie green”\n→ Change the hoodie color to forest green, matte cotton texture, preserved seams and drawstrings, gentle fabric shading, accurate shadows, consistent lighting.\n\nUser: “swap me with a tiger”\n→ Replace the person with a Bengal tiger, rich orange coat, bold black stripes, fuzzy fur detail, alert ears.\n\nUser: “add a parrot”\n→ Add a vibrant macaw parrot perched on the person’s right shoulder, curved beak, layered feathers, slight head tilt, natural grip, feather highlights, soft contact shadow.\n\nUser: “make the apple a crystal ball”\n→ Replace the apple with a clear crystal ball, smooth glass, internal light refractions, palm-sized, realistic specular highlights, subtle caustics on nearby surface.\n\nUser: “make it autumn with leaves”\n→ Transform the scene to early autumn with warm afternoon light, amber tones, a few crisp maple leaves gently falling, shallow depth of field, balanced composition.\"\"\""
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 77,
+      "type": "PrimitiveFloat",
+      "pos": [
+        -660.874267578125,
+        436.1902770996094
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            154,
+            164
+          ]
+        }
+      ],
+      "title": "FPS",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.59",
+        "Node name for S&R": "PrimitiveFloat",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {
+            "value": true
+          }
+        }
+      },
+      "widgets_values": [
+        24
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 80,
+      "type": "PrimitiveInt",
+      "pos": [
+        -661.8599243164062,
+        550.46533203125
+      ],
+      "size": [
+        210,
+        82
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            155
+          ]
+        }
+      ],
+      "title": "Frame Count",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.59",
+        "Node name for S&R": "PrimitiveInt",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {
+            "value": true
+          }
+        }
+      },
+      "widgets_values": [
+        81,
+        "fixed"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 37,
+      "type": "UNETLoader",
+      "pos": [
+        -656.4107055664062,
+        80.22872924804688
+      ],
+      "size": [
+        346.7470703125,
+        82
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            161
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.45",
+        "Node name for S&R": "UNETLoader",
+        "models": [
+          {
+            "name": "wan2.2_ti2v_5B_fp16.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_ti2v_5B_fp16.safetensors",
+            "directory": "diffusion_models"
+          }
+        ],
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {
+            "unet_name": true,
+            "weight_dtype": true
+          }
+        }
+      },
+      "widgets_values": [
+        "lucy-edit-dev-cui-fp16.safetensors",
+        "default"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 38,
+      "type": "CLIPLoader",
+      "pos": [
+        -658.9326782226562,
+        200.78048706054688
+      ],
+      "size": [
+        350,
+        110
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "slot_index": 0,
+          "links": [
+            170
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.45",
+        "Node name for S&R": "CLIPLoader",
+        "models": [
+          {
+            "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "directory": "text_encoders"
+          }
+        ],
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {
+            "clip_name": true,
+            "type": true,
+            "device": true
+          }
+        }
+      },
+      "widgets_values": [
+        "split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "wan",
+        "default"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 91,
+      "type": "PathchSageAttentionKJ",
+      "pos": [
+        -296.0287170410156,
+        88.17869567871094
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 161
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            162
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "9d7af919b91838fb22e31ad0107a6ddcf8bd7f3f",
+        "Node name for S&R": "PathchSageAttentionKJ"
+      },
+      "widgets_values": [
+        "disabled"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 69,
+      "type": "LucyConditionConcatNode",
+      "pos": [
+        859.5338745117188,
+        54.74557876586914
+      ],
+      "size": [
+        182.89999389648438,
+        46
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 162
+        },
+        {
+          "name": "concat_latent",
+          "type": "LATENT",
+          "link": 146
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            137
+          ]
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": [
+            138
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "DecartAI/Lucy-Edit-ComfyUI",
+        "ver": "09e0f31f6ce5505edf4b41a4a14ca126ba50dcc1",
+        "Node name for S&R": "LucyConditionConcatNode",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 48,
+      "type": "ModelSamplingSD3",
+      "pos": [
+        858.135498046875,
+        153.49122619628906
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 137
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            95
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.45",
+        "Node name for S&R": "ModelSamplingSD3",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {
+            "shift": true
+          }
+        }
+      },
+      "widgets_values": [
+        5
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 8,
+      "type": "VAEDecode",
+      "pos": [
+        1239.452392578125,
+        73.2027359008789
+      ],
+      "size": [
+        210,
+        46
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 160
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 76
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            163
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.45",
+        "Node name for S&R": "VAEDecode",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 97,
+      "type": "PgLazyPromptMini",
+      "pos": [
+        328.2383728027344,
+        436.4642333984375
+      ],
+      "size": [
+        465.5229797363281,
+        342.84954833984375
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 170
+        }
+      ],
+      "outputs": [
+        {
+          "name": "POS_OUT",
+          "type": "CONDITIONING",
+          "links": [
+            171
+          ]
+        },
+        {
+          "name": "NEG_OUT",
+          "type": "CONDITIONING",
+          "links": [
+            172
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "GizmoR13/PG-Nodes",
+        "ver": "cd9a1fb6d363bc909dc3d64621b4ede699855f8f",
+        "Node name for S&R": "PgLazyPromptMini",
+        "history_path": "custom_nodes\\prompt_history.json",
+        "max_entries": 500
+      },
+      "widgets_values": [
+        "Change the outfit to none exposing the nude chest of this youthful slender 12 year old girl.",
+        "women, not youthful, big breasts, obese, low resolution, plastic skin, no skin detail."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 3,
+      "type": "KSampler",
+      "pos": [
+        861.1337890625,
+        261.6386413574219
+      ],
+      "size": [
+        307.78338623046875,
+        562.8746948242188
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 95
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 171
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 172
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 138
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            160
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.45",
+        "Node name for S&R": "KSampler",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {
+            "seed": true,
+            "steps": true,
+            "cfg": true,
+            "sampler_name": true,
+            "scheduler": true,
+            "denoise": true
+          }
+        }
+      },
+      "widgets_values": [
+        320852932962497,
+        "randomize",
+        50,
+        5,
+        "euler",
+        "simple",
+        1
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 39,
+      "type": "VAELoader",
+      "pos": [
+        -293.0121765136719,
+        215.03221130371094
+      ],
+      "size": [
+        266.1787109375,
+        58
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "slot_index": 0,
+          "links": [
+            76,
+            145
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.45",
+        "Node name for S&R": "VAELoader",
+        "models": [
+          {
+            "name": "wan2.2_vae.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/vae/wan2.2_vae.safetensors",
+            "directory": "vae"
+          }
+        ],
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {
+            "vae_name": true
+          }
+        }
+      },
+      "widgets_values": [
+        "split_files/vae/wan2.2_vae.safetensors"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 82,
+      "type": "VHS_LoadVideoFFmpeg",
+      "pos": [
+        -417.76702880859375,
+        452.5453186035156
+      ],
+      "size": [
+        309.0703125,
+        286
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "force_rate",
+          "type": "FLOAT",
+          "widget": {
+            "name": "force_rate"
+          },
+          "link": 154
+        },
+        {
+          "name": "frame_load_cap",
+          "type": "INT",
+          "widget": {
+            "name": "frame_load_cap"
+          },
+          "link": 155
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            152
+          ]
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            169
+          ]
+        },
+        {
+          "name": "video_info",
+          "type": "VHS_VIDEOINFO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "1.7.7",
+        "Node name for S&R": "VHS_LoadVideoFFmpeg",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {
+            "video": true,
+            "force_rate": true,
+            "custom_width": true,
+            "custom_height": true,
+            "frame_load_cap": true,
+            "start_time": true,
+            "format": true
+          }
+        }
+      },
+      "widgets_values": {
+        "video": "animatie.MP4",
+        "force_rate": 0,
+        "custom_width": 0,
+        "custom_height": 0,
+        "frame_load_cap": 0,
+        "start_time": 0,
+        "format": "Wan",
+        "choose video to upload": "image",
+        "videopreview": {
+          "hidden": false,
+          "paused": true,
+          "params": {
+            "filename": "animatie.MP4",
+            "type": "input",
+            "format": "video/MP4",
+            "force_rate": 0,
+            "custom_width": 0,
+            "custom_height": 0,
+            "frame_load_cap": 0,
+            "start_time": 0
+          }
+        }
+      },
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 73,
+      "type": "VAEEncode",
+      "pos": [
+        -72.41485595703125,
+        451.49407958984375
+      ],
+      "size": [
+        140,
+        46
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 143
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 145
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            146
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.59",
+        "Node name for S&R": "VAEEncode",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 72,
+      "type": "ImageResizeKJv2",
+      "pos": [
+        -74.55673217773438,
+        507.2799987792969
+      ],
+      "size": [
+        270,
+        336.00006103515625
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 152
+        },
+        {
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            143
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "1.1.4",
+        "Node name for S&R": "ImageResizeKJv2",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {
+            "width": true,
+            "height": true,
+            "upscale_method": true,
+            "keep_proportion": true,
+            "pad_color": true,
+            "crop_position": true,
+            "divisible_by": true,
+            "device": true
+          }
+        }
+      },
+      "widgets_values": [
+        704,
+        1280,
+        "nearest-exact",
+        "stretch",
+        "0, 0, 0",
+        "center",
+        32,
+        "cpu"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 92,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        1231.749755859375,
+        186.05397033691406
+      ],
+      "size": [
+        425.3536682128906,
+        334
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 163
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 169
+        },
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "frame_rate",
+          "type": "FLOAT",
+          "widget": {
+            "name": "frame_rate"
+          },
+          "link": 164
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "0edce8ef7ce173ac97a3ed3d6f4636029d1a4530",
+        "Node name for S&R": "VHS_VideoCombine"
+      },
+      "widgets_values": {
+        "frame_rate": 8,
+        "loop_count": 0,
+        "filename_prefix": "AnimateDiff",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
+        "save_metadata": true,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "AnimateDiff_00004.gif",
+            "subfolder": "",
+            "type": "output",
+            "format": "image/gif",
+            "frame_rate": 24,
+            "workflow": "AnimateDiff_00004.png",
+            "fullpath": "/workspace/ComfyUI/output/AnimateDiff_00004.gif"
+          }
+        }
+      },
+      "color": "#222",
+      "bgcolor": "#000"
+    }
+  ],
+  "links": [
+    [
+      76,
+      39,
+      0,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      95,
+      48,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      137,
+      69,
+      0,
+      48,
+      0,
+      "MODEL"
+    ],
+    [
+      138,
+      69,
+      1,
+      3,
+      3,
+      "LATENT"
+    ],
+    [
+      143,
+      72,
+      0,
+      73,
+      0,
+      "IMAGE"
+    ],
+    [
+      145,
+      39,
+      0,
+      73,
+      1,
+      "VAE"
+    ],
+    [
+      146,
+      73,
+      0,
+      69,
+      1,
+      "LATENT"
+    ],
+    [
+      152,
+      82,
+      0,
+      72,
+      0,
+      "IMAGE"
+    ],
+    [
+      154,
+      77,
+      0,
+      82,
+      2,
+      "FLOAT"
+    ],
+    [
+      155,
+      80,
+      0,
+      82,
+      3,
+      "INT"
+    ],
+    [
+      160,
+      3,
+      0,
+      8,
+      0,
+      "LATENT"
+    ],
+    [
+      161,
+      37,
+      0,
+      91,
+      0,
+      "MODEL"
+    ],
+    [
+      162,
+      91,
+      0,
+      69,
+      0,
+      "MODEL"
+    ],
+    [
+      163,
+      8,
+      0,
+      92,
+      0,
+      "IMAGE"
+    ],
+    [
+      164,
+      77,
+      0,
+      92,
+      4,
+      "FLOAT"
+    ],
+    [
+      169,
+      82,
+      2,
+      92,
+      1,
+      "AUDIO"
+    ],
+    [
+      170,
+      38,
+      0,
+      97,
+      0,
+      "CLIP"
+    ],
+    [
+      171,
+      97,
+      0,
+      3,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      172,
+      97,
+      1,
+      3,
+      2,
+      "CONDITIONING"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Step1 - Load models",
+      "bounding": [
+        -670.6849975585938,
+        10.368669509887695,
+        661.8927001953125,
+        311.2036437988281
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "Step3 - Prompt",
+      "bounding": [
+        314.4557189941406,
+        352.67047119140625,
+        497.0460510253906,
+        453.7107238769531
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "Step2 - Prepare Input Video Encoding",
+      "bounding": [
+        -676.4159545898438,
+        350.01788330078125,
+        941.8098754882812,
+        941.6284790039062
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 6,
+      "title": "Step4 - Generate Video",
+      "bounding": [
+        842.4246826171875,
+        -18.854421615600586,
+        348.76458740234375,
+        861.9261474609375
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 7,
+      "title": "Step5 - Save Output Video",
+      "bounding": [
+        1197.8607177734375,
+        -16.195669174194336,
+        467.38653564453125,
+        867.0711059570312
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5783909834671909,
+      "offset": [
+        794.6182526825263,
+        83.70953263962127
+      ]
+    },
+    "frontendVersion": "1.26.13",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true,
+    "ue_links": [],
+    "links_added_by_ue": []
+  },
+  "version": 0.4
+}
