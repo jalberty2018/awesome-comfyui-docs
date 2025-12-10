@@ -8,15 +8,34 @@
 - [Login](https://github.com/liusida/ComfyUI-Login)  
 - [Manager](https://github.com/ltdrdata/ComfyUI-Manager)
 - [KJNodes](https://github.com/kijai/ComfyUI-KJNodes)
+- [StringEssentials](https://github.com/bradsec/ComfyUI_StringEssentials.git)
+- [PG Nodes](https://github.com/GizmoR13/PG-Nodes)
+
+### Utilities
+
+- [GGUF](https://github.com/city96/ComfyUI-GGUF)
+
+### Resolution choosers
+
+- [Resolution master](https://github.com/Azornes/Comfyui-Resolution-Master.git)
+- [Resolution Chooser ZIT](https://github.com/SaTaNoob/ComfyUI-Z-Image-Turbo-Resolutions)
+- [Latent size Chooser ZIT](https://github.com/HellerCommaA/ComfyUI-ZImageLatent.git)
+
+### Image savers
+
+- [cg-image-filter](https://github.com/chrisgoringe/cg-image-filter)
 - [Image Saver](https://github.com/alexopus/ComfyUI-Image-Saver)
 - [comfyui-save-image-enhanced](https://github.com/KY-2000/comfyui-save-image-enhanced)
-- [cg-image-filter](https://github.com/chrisgoringe/cg-image-filter)
-- [GGUF](https://github.com/city96/ComfyUI-GGUF)
-- [Resolution master](https://github.com/Azornes/Comfyui-Resolution-Master.git)
-- [PG Nodes](https://github.com/GizmoR13/PG-Nodes)
-- [ComfyUi-Scale-Image-to-Total-Pixels-Advanced](https://github.com/BigStationW/ComfyUi-Scale-Image-to-Total-Pixels-Advanced)
-- [Image Chooser classic](https://github.com/heyburns/image-chooser-classic)
+
+### Pixel scaler
+
 - [PixelConstrainedScaler](https://github.com/neonr-0/ComfyUI-PixelConstrainedScaler)
+- [ComfyUi-Scale-Image-to-Total-Pixels-Advanced](https://github.com/BigStationW/ComfyUi-Scale-Image-to-Total-Pixels-Advanced)
+
+### Pixel upscaler
+
+- [SD Upscale](https://github.com/ssitu/ComfyUI_UltimateSDUpscale)
+- [ComfyUI-SeedVR2_VideoUpscaler](https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler)
 
 ### Image manipulation
 
@@ -26,10 +45,13 @@
 - [EsesImageEffectLevels](https://github.com/quasiblob/ComfyUI-EsesImageEffectLevels)
 - [VRgamedevgirl](https://github.com/vrgamegirl19/comfyui-vrgamedevgirl)
 
-### Inference
+### Noise/Conditioning
 
 - [Detail Deamon](https://github.com/Jonseed/ComfyUI-Detail-Daemon)
 - [NAG](https://github.com/ChenDarYen/ComfyUI-NAG)
+- [SeedVarianceEnhancer ZIT](https://github.com/ChangeTheConstants/SeedVarianceEnhancer)
+- [ConditioningNoiseInjection](https://github.com/BigStationW/ComfyUi-ConditioningNoiseInjection)
+- [ConditioningTimestepSwitch](https://github.com/BigStationW/ComfyUi-ConditioningTimestepSwitch)
 
 ### Samplers
 
@@ -40,27 +62,23 @@
 
 - [controlnet_aux](https://github.com/Fannovel16/comfyui_controlnet_aux)
 
-### Flow
+### Automatisation
 
 - [Power Flow](https://github.com/x3bits/ComfyUI-Power-Flow/tree/main)
+- [Comfyui-LoopLoader](https://github.com/alessandrozonta/Comfyui-LoopLoader)
 
 ### Segmentation
 
-- [Segment anything](https://github.com/kijai/ComfyUI-segment-anything-2)
+- [Segment anything 2](https://github.com/kijai/ComfyUI-segment-anything-2)
 - [RMBG](https://github.com/1038lab/ComfyUI-RMBG)
 - [SecNodes](https://github.com/9nate-drake/Comfyui-SecNodes)
 - [AutoCropFaces](https://github.com/liusida/ComfyUI-AutoCropFaces)
 - [SAM3](https://github.com/PozzettiAndrea/ComfyUI-SAM3)
 
-### Z-Image
+### Tagging/Caption
 
-- [Z-Image-Turbo-Resolutions](https://github.com/SaTaNoob/ComfyUI-Z-Image-Turbo-Resolutions)
-- [SeedVarianceEnhancer](https://github.com/ChangeTheConstants/SeedVarianceEnhancer)
-- [ZImageLatent](https://github.com/HellerCommaA/ComfyUI-ZImageLatent.git)
-
-### Upscaler
-
-- [SD Upscale](https://github.com/ssitu/ComfyUI_UltimateSDUpscale)
+- [Joytag](https://github.com/StartHua/Comfyui_joytag)
+- [JoyCaption](https://github.com/1038lab/ComfyUI-JoyCaption.git)
 
 ## 🧩 All possible Custom Nodes
 

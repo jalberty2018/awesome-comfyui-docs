@@ -2,7 +2,7 @@
 
 - Open from ComfyUI's interface on the left.
 
-## 🧩 WAN 2.2
+## 🧩 WAN 2.2 Video
 
 ### t2v
 
@@ -53,23 +53,11 @@
 
 - [ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper/tree/main/example_workflows)
 
-## 🧩 Hunyuan Video 1.5
-
-### t2v
-
-- [KSampler](pod/hy/HY15-t2v-KSampler-pod.json)
-- [KSampler + Super Upscaler](pod/hy/HY15-t2v-KSampler-Upscaler-pod.json)
-
-### i2v
-
-- [KSampler](pod/hy/HY15-i2v-KSampler-pod.json)
-- [KSampler + Super Upscaler](pod/hy/HY15-i2v-KSampler-Upscaler-pod.json)
-
-## 🧩 Z-Image turbo
+## 🧩 Z-Image turbo Image
 
 - [t2i](pod/image/ZIT-t2i-pod.json)
 - [t2i advanced nodes](pod/image/ZIT-t2i-adv-pod.json)
 
-## 🧩 Flux.2 Dev
+## 🧩 Flux.2 Dev Image
 
 - [ti2i](pod/image/FLUX2-ti2i-pod.json)

@@ -20,10 +20,11 @@
 | flash_attn     | `2.8.3`    |
 | sageattention  |  `2.2.0`   |
 | torch_generic_nms | `0.1` |
+| llmama-cpp | `0.3.16` |
 
 ## Optimised
 
-| Processor | Compute Capability | SM |
-|------------|-----------------|-----------|
-| A40  | 8.6 | sm_86 |
-| L40S | 8.9 | sm_89 |
+| Processor example | Compute Capability | Family | SM |
+|------------|---------|--------|-----------|
+| A40  | 8.6 | Ampere    | sm_86 |
+| L40S | 8.9 | Ada Lovelace  | sm_89 |
