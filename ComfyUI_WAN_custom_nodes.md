@@ -47,6 +47,7 @@
 - [PainterLongVideo](https://github.com/princepainter/ComfyUI-PainterLongVideo)
 - [PainterI2VforKJ](https://github.com/princepainter/ComfyUI-PainterI2VforKJ)
 - [PainterFLF2V](https://github.com/princepainter/Comfyui-PainterFLF2V)
+- [Keyframebuilder](https://github.com/ckinpdx/ComfyUI-WanKeyframeBuilder)
 
 ### Sampling
 
@@ -57,6 +58,10 @@
 - [TripleKSampler](https://github.com/VraethrDalkr/ComfyUI-TripleKSampler)
 - [WanMoEScheduler](https://github.com/cmeka/ComfyUI-WanMoEScheduler)
 - [PainterSampler](https://github.com/princepainter/Comfyui-PainterSampler.git)
+
+### Tagging/Caption
+
+- [JoyCaption](https://github.com/1038lab/ComfyUI-JoyCaption.git)
 
 ### VRAM management
 
