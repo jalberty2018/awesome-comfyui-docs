@@ -23,9 +23,9 @@
 
 ### Image savers
 
-- [cg-image-filter](https://github.com/chrisgoringe/cg-image-filter)
+- [Cg-image-filter](https://github.com/chrisgoringe/cg-image-filter)
 - [Image Saver](https://github.com/alexopus/ComfyUI-Image-Saver)
-- [comfyui-save-image-enhanced](https://github.com/KY-2000/comfyui-save-image-enhanced)
+- [Comfyui-save-image-enhanced](https://github.com/KY-2000/comfyui-save-image-enhanced)
 
 ### Pixel scaler
 
@@ -52,6 +52,8 @@
 - [SeedVarianceEnhancer ZIT](https://github.com/ChangeTheConstants/SeedVarianceEnhancer)
 - [ConditioningNoiseInjection](https://github.com/BigStationW/ComfyUi-ConditioningNoiseInjection)
 - [ConditioningTimestepSwitch](https://github.com/BigStationW/ComfyUi-ConditioningTimestepSwitch)
+- [RBG-SmartSeedVariance ZIT](https://github.com/RamonGuthrie/ComfyUI-RBG-SmartSeedVariance)
+- [LatentUtils](https://github.com/lrzjason/Comfyui-LatentUtils)
 
 ### Samplers
 
@@ -66,6 +68,7 @@
 
 - [Power Flow](https://github.com/x3bits/ComfyUI-Power-Flow/tree/main)
 - [Comfyui-LoopLoader](https://github.com/alessandrozonta/Comfyui-LoopLoader)
+- [Outputlists-combiner](https://github.com/geroldmeisinger/ComfyUI-outputlists-combiner)
 
 ### Segmentation
 
